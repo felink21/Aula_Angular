@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projeto';
+
+  titulo = 'Exemplo das Diretivas ngIF e ngFor';
+  times = ['Grêmio', 'Palmeiras', 'Flamengo', 'Atlético', 'Santos'];
+  time = this.times[0];
+
+  exibirNome: boolean = true;
+
+  alternar() {
+    this.exibirNome = !this.exibirNome;
+  }
+
 }
